@@ -309,9 +309,9 @@ socket.on('get_msg',async (data)=>{
             dismsg+='<div class="d-flex flex-row justify-content-end"><div><p class="small p-2 mb-1 text-white rounded-3 bg-primary">'+mainmsgings.msg_content+'</p></div></div>';
         }else{ 
             if(mainmsgings.flag_pic==1){
-                dismsg+='<div class="d-flex flex-row justify-content-start mb-4"><img src="../images/'+chat_pic+'" alt="avatar 1" style="width: 45px; height: 100%;border: 2px solid rgb(239 239 239);border-radius: 20px;"><div><p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">'+mainmsgings.msg_content+'</p></div></div>';
+                dismsg+='<div class="d-flex flex-row justify-content-start mb-4" data="1"><img src="../images/'+chat_pic+'" alt="avatar 1" style="width: 45px; height: 100%;border: 2px solid rgb(239 239 239);border-radius: 20px;"><div><p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">'+mainmsgings.msg_content+'</p></div></div>';
             }else{
-                dismsg+='<div class="d-flex flex-row justify-content-start mb-4"><div><p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">'+mainmsgings.msg_content+'</p></div></div>';;            
+                dismsg+='<div class="d-flex flex-row justify-content-start mb-4" data="1"><div><p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">'+mainmsgings.msg_content+'</p></div></div>';;            
             }            
         }            
     }
